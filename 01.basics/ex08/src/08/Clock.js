@@ -6,7 +6,6 @@ export default function() {
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
-
     return (
         /*
             comment01: 컴포넌트 안이 아니기 때문에 자바스크립트 구문이 가능하다.
