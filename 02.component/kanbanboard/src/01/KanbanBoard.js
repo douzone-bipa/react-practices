@@ -7,7 +7,7 @@ export default function() {
         <div className='KanbanBoard'>
             <CardList key='ToDo' title={'ToDo'} cards={ cards.filter((card) => card.status === 'ToDo') }/>
             <CardList key='Doing' title={'Doing'} cards={ cards.filter((card) => card.status === 'Doing') }/>
-            <CardList key='Done' cards={'Done'} cards={cards.filter((card) => card.status === 'Done') }/>
+            <CardList key='Done' title={'Done'} cards={cards.filter((card) => card.status === 'Done') }/>
         
         </div>
     )
