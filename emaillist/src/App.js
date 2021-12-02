@@ -1,9 +1,14 @@
 import React from 'react';
+import RegisterForm from './RegisterForm';
+
+import './assets/scss/App.scss';
 
 export default function() {
     return (
-        <div id='App'>
-          <h1>Emaillist</h1>
+        <div className={'App'}>
+          <RegisterForm />
+
+          
         </div>
     )
 }
