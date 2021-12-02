@@ -1,7 +1,8 @@
 import React from 'react';
 import CardList from './CardList';
-import cards from './assets/json/data.json';
 import styles from './assets/css/KanbanBoard.css';
+
+import cards from './assets/json/data.json';
 
 export default function() {
     return (
