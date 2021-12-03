@@ -17,7 +17,7 @@ export default function Message({no, name, message, notifyDeleteMessage}) {
                 }
             </p>
             <strong/>
-            <a onClick={ () => { notifyDeleteMessage(no) } }>삭제</a>
+            <a onClick={ () => notifyDeleteMessage(no) }>삭제</a>
         </li>
     );
 }

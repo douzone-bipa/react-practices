@@ -9,16 +9,51 @@ Modal.setAppElement('body');
 
 export default function MessageList({messages}) {
     const refForm = useRef(null);
-    const [isOpen, setIsOpen] = useState(false);
+    const [modalData, setModalData] = useState({isOpen: false});
 
-    const handleSubmit = (e) => {
-        e.preventDefault();        
-        console.log("삭제!!!")
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            if(e.target.password.value === '') {
+                return;
+            }
+
+            // const response = await fetch(`/api/${modalData.messageNo}`, {
+            //     method: 'delete',
+            //     header: {
+            //         'Content-Type': 'application/json',
+            //         'Accept': 'application/json'
+            //     },
+            //     body: JSON.stringify({password: modalData.password})
+            // });
+
+            // if(!response.ok) {
+            //     throw  `${response.status} ${response.statusText}`;
+            // }
+
+            // const jsonResult = response.json;
+
+
+            // 비밀번호가 틀린 경우
+            // jsonResult.data = null
+            setModalData({}, Object.assign(modalData), {title: '.....', password: ''});
+            // 잘 삭제가 된 경우
+            // jsonResult.data = 10
+
+            console.log("삭제!!!:", modalData);
+
+        } catch (err) {
+            console.error(err);
+        }
     }
 
     const notifyDeleteMessage = (no) => {
-        console.log('delete!!!:' + no);
-        setIsOpen(true);
+        setModalData({
+            title: '작성시 입력했던 비밀번호를 입력 하세요.', 
+            isOpen: true,
+            messageNo: no,
+            password: ''
+        })
     }
 
     return (
@@ -31,8 +66,8 @@ export default function MessageList({messages}) {
                                                   notifyDeleteMessage={notifyDeleteMessage} />)}
             </ul>
             <Modal
-                isOpen={isOpen}
-                onRequestClose={() => setIsOpen(false)}
+                isOpen={modalData.isOpen}
+                onRequestClose={ () => setModalData({isOpen: false}) }
                 shouldCloseOnOverlayClick={true}
                 className={modalStyles.Modal}
                 overlayClassName={modalStyles.Overlay}
@@ -43,19 +78,21 @@ export default function MessageList({messages}) {
                         ref={refForm}
                         className={styles.DeleteForm}
                         onSubmit={handleSubmit}>
-                        <label>작성시 입력했던 비밀번호를 입력 하세요.</label>
+                        <label>{modalData.title}</label>
                         <input
                             type={'password'}
                             autoComplete={'off'}
                             name={'password'}
-                            placeholder={'비밀번호'}/>
+                            value={modalData.password}
+                            placeholder={'비밀번호'}
+                            onChange={(e) => setModalData(Object.assign({}, modalData, {password: e.target.value}))}/>
                     </form>
                 </div>
                 <div className={modalStyles['modal-dialog-buttons']}>
                     <button onClick={ () => {
                         refForm.current.dispatchEvent(new Event("submit", {cancelable: true, bubbles: true}));
                     } }>확인</button>
-                    <button onClick={() => setIsOpen(false)}>취소</button>
+                    <button onClick={() => {setModalData(Object.assign({}, modalData, {isOpen: false})) } }>취소</button>
                 </div>
             </Modal>
         </Fragment>
