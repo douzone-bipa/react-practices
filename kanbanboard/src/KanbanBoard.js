@@ -2,9 +2,10 @@ import React from 'react';
 import CardList from './CardList';
 import styles from './assets/css/KanbanBoard.css';
 
-import cards from './assets/json/data.json';
 
 export default function() {
+    const [cards, setCards] = useState(data);
+
     return (
         <div className={styles.KanbanBoard}>
             <CardList key='ToDo' title={'ToDo'} cards={cards.filter((card) => card.status === 'ToDo') }/>
