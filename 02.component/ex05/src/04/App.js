@@ -17,17 +17,17 @@ export default function App() {
         };
     }
 
-    const [state, setState] = useState(getCurrentClockTime());
+    const [currentClockTime, setCurrentClockTime] = useState(getCurrentClockTime());
 
     useEffect(() => {
         setInterval(function () {
-            setState(getCurrentClockTime());
+            setCurrentClockTime(getCurrentClockTime());
         }, 1000);
     }, []);
 
     return <Clock
                 message={'ex05: useEffect Hook example'}
-                hours={state.hours}
-                minutes={state.minutes}
-                seconds={state.seconds} />;
+                hours={currentClockTime.hours}
+                minutes={currentClockTime.minutes}
+                seconds={currentClockTime.seconds} />;
 }
