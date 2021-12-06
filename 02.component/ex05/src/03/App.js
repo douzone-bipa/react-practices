@@ -18,7 +18,8 @@ export default class App extends Component {
             hours: ('0' + (hours == 0 ? 12 : (hours > 12 ? hours - 12 : hours))).slice(-2),
             minutes: minutes,
             seconds: seconds,
-            session: hours >= 12 ? "pm" : "am"
+            session: hours >= 12 ? "pm" : "am",
+            ticks: this.state ? this.state.ticks + 1 : 0
         };
     }
 
@@ -26,11 +27,16 @@ export default class App extends Component {
         return (
             <div className='clock-display'>
                 <h2>ex05 - Component LifeCycle Practice</h2>
-                <Clock
-                    hours={this.state.hours}
-                    minutes={this.state.minutes}
-                    seconds={this.state.seconds}
-                    session={this.state.session} />
+                <span>{this.state.tcicks}</span>
+                {
+                    this.state.ticks % 10 === 0 ?
+                    null:
+                    <Clock
+                        hours={this.state.hours}
+                        minutes={this.state.minutes}
+                        seconds={this.state.seconds}
+                        session={this.state.session} />
+                }
             </div>
         );
     }

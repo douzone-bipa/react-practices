@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 import './assets/scss/App.scss'
 import Clock from './Clock';
 
@@ -18,16 +18,31 @@ export default function App() {
     }
 
     const [currentClockTime, setCurrentClockTime] = useState(getCurrentClockTime());
+    const [ticks, setTicks] = useState(0);
 
     useEffect(() => {
         setInterval(function () {
             setCurrentClockTime(getCurrentClockTime());
+            setTicks(ticks+1);
         }, 1000);
     }, []);
 
-    return <Clock
+    // useEffect(() => {
+    //     console.log("setTimeout called");
+    //     setTimeout(function () {
+    //         setCurrentClockTime(getCurrentClockTime());
+    //         setTicks(ticks+1);
+    //     }, 1000);
+    // }, [currentClockTime]);
+
+    return (
+        <Fragment>
+            <span>{ticks}</span>
+            <Clock
                 message={'ex05: useEffect Hook example'}
                 hours={currentClockTime.hours}
                 minutes={currentClockTime.minutes}
-                seconds={currentClockTime.seconds} />;
+                seconds={currentClockTime.seconds} />
+        </Fragment>  
+    );      
 }
