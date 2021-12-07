@@ -16,10 +16,10 @@ export default function() {
 
     useEffect(async () => {
       try {
-        const response = await fetch('http://localhost:8888/api', {
+        const response = await fetch('/api', {
           method: 'get',
           mode: 'cors',                           // no-cors, cors, same-origin*
-          credentials: 'same-origin',             // include, omit, same-origin*
+          credentials: 'include',                 // include, omit, same-origin*
           cache: 'no-cache',                      // no-cache, reload, force-cache, default*      
           headers: {
             'Content-Type': 'application/json',   // cf. application/x-www-form-urlencoded
@@ -35,6 +35,7 @@ export default function() {
         }
 
         const jsonResult = await response.json();
+        console.log(jsonResult);
 
         if(jsonResult.result !== 'success') {
           throw new Error(`${jsonResult.result} ${jsonResult.message}`);
