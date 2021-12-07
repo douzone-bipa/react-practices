@@ -40,14 +40,16 @@
 6. node application
 
 #### emaillist
-    - 개발 통합 설정(with Node Backend)
-    - backend: Fully APIs(Node Exporess기반)
-    - Frontend: React(SPA)
-    - AJAX: fetch 기반
+1. 개발 통합 설정(with Node Backend)
+2. backend: Fully APIs(Node Exporess기반)
+3. Frontend: React(SPA)
+4. AJAX: fetch 기반
 
 #### cors란?
 1. origin(출처)
-   URL에서 protocol + host + port 를 합친 것
+   - URL에서 protocol + host + port 를 합친 것
+   - 브라우저 콘솔
+
    ```
    > location.origin
    < 'http://localhost:9999'
@@ -61,10 +63,9 @@
 
 4. CORS(Cross Orign Resource Sharing)
    - error
-
-   <pre style='color:red'>
+   <p style='color:red'>
    Access to fetch at 'http://localhost:8888/api' from origin 'http://localhost:9999' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
-   </pre>
+   </p>
 
    - 해결 방법1: simple request
 
