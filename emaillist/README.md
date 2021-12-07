@@ -60,10 +60,14 @@
    - XSS 등과 같은 보안 취약점을 사전에 방지할 수 있다.
 
 4. CORS(Cross Orign Resource Sharing)
+   - error
+
    ```
    Access to fetch at 'http://localhost:8888/api' from origin 'http://localhost:9999' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
    ```
-   1. simple request
+
+   - 해결 방법1: simple request
+
       <pre>
          JS              browser                server
            ------------->        --------------->
@@ -83,7 +87,8 @@
       2) Accept, Accept-Language, Content-Type 등의 헤더만 사용하는 경우
       3) Content-Type 헤더에 application/x-www-form-urlencoded, multipart/for-data, text/palin 인 경우
 
-   2. preflight request
+   - 해결 방법2: preflight request
+
       <pre>
          JS              browser                server
            ------------->       --------------->
@@ -94,6 +99,7 @@
                                    200 OK
                                    Access-Control-Allow-Origin: *
 
+
                                  --------------->
                                    GET /api
                                  <---------------
@@ -103,5 +109,5 @@
                                     ==============================
                                     "{...........}"  
 
-   respons <-------------                                 
+       respons <---------                                 
       </pre>
