@@ -91,24 +91,28 @@
    - 해결 방법2: preflight request
 
       <pre>
-         JS              browser                server
-           ------------->       --------------->
-              fetch()              OPTIONS /api/token
-                                   Access-Control-Request-Headers: GET
-
-                                <---------------
-                                   200 OK
-                                   Access-Control-Allow-Origin: *
+                           JS               browser                server
+                              ------------->       --------------->
+                                 fetch()           OPTIONS /api/token
+                                                   Access-Control-Request-Headers: GET
+                                                   ...
 
 
-                                 --------------->
-                                   GET /api
-                                 <---------------
-                                     200 OK
-                                     Access-Control-Allow-Origin:*
-                                     cookies: ......
-                                    ==============================
-                                    "{...........}"  
+                                                   <---------------
+                                                   200 OK
+                                                   Access-Control-Allow-Origin: *
+
+
+
+                                                   --------------->
+                                                   GET /api
+
+                                                   <---------------
+                                                   200 OK
+                                                   Access-Control-Allow-Origin:*
+                                                   cookies: ......
+                                                   ==============================
+                                                   "{...........}"  
 
        respons <---------                                 
       </pre>
