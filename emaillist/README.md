@@ -63,24 +63,24 @@
 
 4. CORS(Cross Orign Resource Sharing)
    - error
-   <p style='color:red'>
+   <p>
    Access to fetch at 'http://localhost:8888/api' from origin 'http://localhost:9999' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
    </p>
 
    - 해결 방법1: simple request
 
       <pre>
-         JS              browser                server
-           ------------->        --------------->
-                                   GET /api
+                              JS            browser                server
+                              ------------->        --------------->
+                                   fetch              GET /api
                                  
-                                 <---------------
-                                     200 OK
-                                     Access-Control-Allow-origin:*
-                                    ==============================
-                                    "{...........}"  
+                                                    <---------------
+                                                      200 OK
+                                                      Access-Control-Allow-origin:*
+                                                      ==============================
+                                                      "{...........}"  
 
-   respons <-------------                                 
+         respons <-------------                                 
       </pre>
 
       조건:
