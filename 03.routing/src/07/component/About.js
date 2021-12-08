@@ -7,7 +7,7 @@ export default function About() {
     return (
         <SiteLayout>
             <nav className={styles2.Navigation}>
-                <a href={'/about/kickscar'}>Kickscar</a>
+                <a href={'/about/me'}>Me</a>
                 <span/>
                 <a href={'/about/location'}>Location</a>
             </nav>
