@@ -1,0 +1,85 @@
+2021-07-14 21:20:11 error: models.User.creat is not a function
+2021-07-14 21:21:44 error: models.User.creat is not a function
+2021-07-14 21:22:50 error: models.User.creat is not a function
+2021-07-14 21:24:48 error: models.User.creat is not a function
+2021-07-14 21:25:25 error: TypeError: models.User.creat is not a function
+2021-07-14 21:28:11 error: TypeError:models.User.creat is not a function
+TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
+2021-07-14 21:28:35 error: models.User.creat is not a function
+TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
+2021-07-14 21:28:58 error: models.User.creat is not a function
+TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
+2021-07-14 21:30:03 error: models.User.creat is not a function:TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
+2021-07-14 21:30:27 error: TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
+2021-07-14 21:34:10 error: TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
+2021-07-14 21:35:04 error: TypeError: models.User.creat is not a function
+    at _join (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/controllers/user.js:13:31)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kickscar/DoWork/VSCodeProjects/node-practices/mysite/node_modules/express/lib/router/index.js:47:12)
